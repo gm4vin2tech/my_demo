@@ -1,0 +1,15 @@
+current directory: /home/spar/ruby-rails-training-oct10/my_demo/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+/home/spar/.rvm/rubies/ruby-2.6.6/bin/ruby -I /home/spar/.rvm/rubies/ruby-2.6.6/lib/ruby/site_ruby/2.6.0 -r ./siteconf20221021-27648-mq451u.rb extconf.rb
+creating Makefile
+
+current directory: /home/spar/ruby-rails-training-oct10/my_demo/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/spar/ruby-rails-training-oct10/my_demo/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/spar/ruby-rails-training-oct10/my_demo/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20221021-27648-nlijk2

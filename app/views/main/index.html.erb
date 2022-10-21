@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<%= stylesheet_link_tag    'main', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'main1.js', 'data-turbolinks-track': 'reload' %>
+	</head>
+	<body class="pages contact">
+			 	 	 	
+<% name = current_user.present? ? current_user.email : 'Stranger' %>
+
+<h1>Welcome, <%= name %> </h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+    
+
+<% if user_signed_in? %>
+    <li>
+        <%= button_to 'Sign out', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    </li>
+<% else %>
+    <li>
+        <%= link_to 'Sign In', new_user_session_path %>
+    </li>
+    <li>
+        <%= link_to 'Register', new_user_registration_path %>
+    </li>
+<% end %>
+
+
+		
+		<h1>Main#index</h1>
+		<p>Find me in app/views/main/index.html.erb</p>
+		<%= image_tag "download.jpeg" %>
+		<img src="/assets/training.jpeg" alt="Logo" style="width:400px;">
+	</body>
+	<script>
+	    // alert('gggggggggg');
+	</script>
+	<style>
+		p{
+			color:  red;
+		}
+	</style>
+</html>
